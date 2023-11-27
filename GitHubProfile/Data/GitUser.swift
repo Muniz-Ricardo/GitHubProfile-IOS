@@ -11,4 +11,7 @@ struct GitUser: Decodable {
     let login: String
     let avatarUrl: String
     let bio: String
+    let name: String
+    let publicRepos: Int
+    let followers: Int
 }
