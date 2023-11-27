@@ -11,6 +11,12 @@
 		8C7EF73A2B13F658007F518E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7EF7392B13F658007F518E /* ContentView.swift */; };
 		8C7EF73C2B13F65D007F518E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7EF73B2B13F65D007F518E /* Assets.xcassets */; };
 		8C7EF73F2B13F65D007F518E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C7EF73E2B13F65D007F518E /* Preview Assets.xcassets */; };
+		8C8583892B140CCF00533F78 /* Roboto-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C8583882B140CCF00533F78 /* Roboto-Italic.otf */; };
+		8C85838B2B140D8F00533F78 /* Roboto-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C85838A2B140D8E00533F78 /* Roboto-Medium.otf */; };
+		8C85838D2B140DC500533F78 /* Roboto-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C85838C2B140DC500533F78 /* Roboto-Regular.otf */; };
+		8C85838F2B140DF700533F78 /* Roboto-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8C85838E2B140DF700533F78 /* Roboto-Light.otf */; };
+		8C8583922B140F5200533F78 /* GitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8583912B140F5200533F78 /* GitUser.swift */; };
+		8C8583942B1414BD00533F78 /* GHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8583932B1414BD00533F78 /* GHError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		8C7EF7392B13F658007F518E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C7EF73B2B13F65D007F518E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C7EF73E2B13F65D007F518E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8C8583882B140CCF00533F78 /* Roboto-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.otf"; sourceTree = "<group>"; };
+		8C85838A2B140D8E00533F78 /* Roboto-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.otf"; sourceTree = "<group>"; };
+		8C85838C2B140DC500533F78 /* Roboto-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.otf"; sourceTree = "<group>"; };
+		8C85838E2B140DF700533F78 /* Roboto-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.otf"; sourceTree = "<group>"; };
+		8C8583912B140F5200533F78 /* GitUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUser.swift; sourceTree = "<group>"; };
+		8C8583932B1414BD00533F78 /* GHError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHError.swift; sourceTree = "<group>"; };
+		8CC1FFE82B1403AF0053DDDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +64,12 @@
 		8C7EF7362B13F658007F518E /* GitHubProfile */ = {
 			isa = PBXGroup;
 			children = (
+				8C8583902B140F2400533F78 /* Data */,
 				8C7EF7372B13F658007F518E /* GitHubProfileApp.swift */,
 				8C7EF7392B13F658007F518E /* ContentView.swift */,
 				8C7EF73B2B13F65D007F518E /* Assets.xcassets */,
+				8CC1FFE82B1403AF0053DDDF /* Info.plist */,
+				8C8583872B140CAC00533F78 /* Fonts */,
 				8C7EF73D2B13F65D007F518E /* Preview Content */,
 			);
 			path = GitHubProfile;
@@ -65,6 +81,26 @@
 				8C7EF73E2B13F65D007F518E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8C8583872B140CAC00533F78 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8C85838E2B140DF700533F78 /* Roboto-Light.otf */,
+				8C85838C2B140DC500533F78 /* Roboto-Regular.otf */,
+				8C85838A2B140D8E00533F78 /* Roboto-Medium.otf */,
+				8C8583882B140CCF00533F78 /* Roboto-Italic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		8C8583902B140F2400533F78 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8C8583912B140F5200533F78 /* GitUser.swift */,
+				8C8583932B1414BD00533F78 /* GHError.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C7EF73F2B13F65D007F518E /* Preview Assets.xcassets in Resources */,
+				8C85838F2B140DF700533F78 /* Roboto-Light.otf in Resources */,
+				8C8583892B140CCF00533F78 /* Roboto-Italic.otf in Resources */,
+				8C85838D2B140DC500533F78 /* Roboto-Regular.otf in Resources */,
 				8C7EF73C2B13F65D007F518E /* Assets.xcassets in Resources */,
+				8C85838B2B140D8F00533F78 /* Roboto-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C8583922B140F5200533F78 /* GitUser.swift in Sources */,
+				8C8583942B1414BD00533F78 /* GHError.swift in Sources */,
 				8C7EF73A2B13F658007F518E /* ContentView.swift in Sources */,
 				8C7EF7382B13F658007F518E /* GitHubProfileApp.swift in Sources */,
 			);
@@ -269,6 +311,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubProfile/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GitHubProfile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -282,6 +325,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.atarax.GitHubProfile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,7 +340,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GitHubProfile/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GitHubProfile/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -310,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.atarax.GitHubProfile;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
