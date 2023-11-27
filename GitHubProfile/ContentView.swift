@@ -32,6 +32,36 @@ struct ContentView: View {
                 .padding(.top, 10)
                 .foregroundColor(.white)
             
+            HStack {
+                
+                Text(user?.name ?? "name")
+                    .font(.custom("Roboto-Regular", size: 16))
+                    .foregroundColor(.white)
+                    .padding(.top, 2)
+                
+                Text(" - ")
+                    .foregroundColor(.white)
+                
+                let reposLabel: String = "Pub. Repos: \(String(describing: user?.publicRepos ?? 0))"
+                
+                Text(reposLabel)
+                    .foregroundColor(.white)
+            }
+            
+            HStack {
+                Image(systemName: "star")
+                    .resizable()
+                    .foregroundColor(.white)
+                    .frame(width: 14.0, height: 14.0)
+                
+                let followersLabel = "\(String(describing: user?.followers ?? 0)) followers"
+                Text(followersLabel)
+                    .font(.custom("Roboto-Medium", size: 16))
+                    .foregroundColor(.white)
+            }
+            .frame(height: 30)
+                
+            
             Text(user?.bio ?? "Here is the bio of the user searched on GitHub.")
                 .font(.custom("Roboto-Light", size: 18))
                 .foregroundColor(.white)
